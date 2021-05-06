@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.png">
+    <title>Merge or rebase answer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+	#root {
+		width: 100%;
+	}
+	#backbutton {
+		color: blue;
+	}
+	#text_container {
+		width: 70%;
+	}
+</style>
+<body>
+    <div id="root">
+		<div id="text_container">
+			<p>Merge в гите производит слияние одной ветки в целевую, без изменения исходной. Такой подход позволяет сохранять полную историю и хронологический порядок и достаточно прост в использовании.
+			К минусам можно отнести возможную захламленную историю коммитов, в утилите SourceTree наглядно можно увидеть историю изменения веток и как сильно захламленность мешает восприятию информации</p>
+			<p>Rebase (cherry-pick) работает иначе, в отличие от merge, перемещает все изменения из исходной ветки в целевую (т.е. фактически берет все необходимые коммиты и применяет их к целевой ветке),
+			при использовании rebase можно сжать все предыдущие коммиты в один, что позволяет избежать чрезмерно большой истории коммитов.</p>
+			<a id="backbutton" href="./index.html">Назад</a>
+		</div>
+	</div>
+</body>
+
+</html>

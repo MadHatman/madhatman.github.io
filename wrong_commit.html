@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.png">
+    <title>Merge or rebase answer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+	#root {
+		width: 100%;
+	}
+	#backbutton {
+		color: blue;
+	}
+	#text_container {
+		width: 70%;
+	}
+</style>
+<body>
+    <div id="root">
+		<div id="text_container">
+			<p>
+				Если был запушен "неправильный" коммит в удаленную ветку, нужно сделать <mark>git revert <хэш коммита></mark>.
+				<br />
+				При использовании этой комманды в гите создается еще один коммит, который
+				отменит старые изменения. Данная команда отменит лишь один коммит, если нужно отменить цепочку коммитов, то <mark>git revert <самый старый хэш коммита> <самый новый хэш коммита></mark>.
+				<br />
+				Опять же, утилита SourceTree очень удобно показывает график веток с полной историей изменения, в т.ч. и хэши коммитов, если использовать cli, то на помощь придет <mark>git log</mark>.
+				<br />
+				Если коллеги еще не успели запулить "неправильный" коммит, можно немного схитрить и сделать <mark>git reset <хэш коммита на который нужно сделать сброс></mark>, после этого сделать ре-коммит 
+				всех изменений и запушить ветку, тогда не останется никаких следов "неправильного" коммита.
+			</p>
+			<a id="backbutton" href="./index.html">Назад</a>
+		</div>
+	</div>
+</body>
+
+</html>
